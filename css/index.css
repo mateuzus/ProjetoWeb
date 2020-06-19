@@ -1,0 +1,257 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,600;1,700&display=swap');
+
+
+body {
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 13px;
+    color: black;
+}
+
+a {
+text-decoration: none;
+color: black;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto; 
+    width: 900px; /* largura padrão de 900px */
+    height: auto; /* tamanho automático */
+}
+
+/* Topo */
+.topo {
+    width: 100%; /* largura */
+    height: 90px; /* altura */
+    float: left; /* float left - sempre alinhado a esquerda */
+      /* cor de fundo */
+    background:  #54748e url(../img/tabua-topo.jpg); /* pegando alguma imagem da pasta para colocar no topo como bg */
+    border-bottom: 1px solid #445c71; /* estilização da borda */
+}
+
+.logo {
+    width: 210px;
+    height: 70px;
+    float: left;
+    padding: 5px 0;
+    
+}
+
+/* Menu de navegação */
+.menu-topo {
+    width: 600px;
+    height: 70px;
+    float: right;
+    
+}
+
+.menu-topo ul li { /* Menu topo com a lista não ordenada em linha */
+    display: inline; /* centralizada em linha */
+}
+
+.menu-topo ul li a {
+padding: 35px 0px 18px 0px; /* Preenchimento */
+width: 112px; /* Largura */
+height: 38px; /* Altura */
+color: #fff !important;
+float: left; /* Alinhamento a esquerda */
+font-size: 16px; /* tamanho da fonte */
+cursor: pointer; /* quando o curso está em cima do local, altera o tipo do cursor */
+text-align: center; /* alinhamento do texto */
+text-shadow: 2px 2px 1px #4a687d; /* sombra do texto */
+border-right: 1 px solid #4a687d; /* borda direita */
+-webkit-transition: background-color .3s ease-out; /* transição quando passa o mouse no Chrome */
+-moz-transition: background-color .3s ease-out;/* transição quando passa o mouse no Firefox */
+-o-transition: background-color .3s ease-out; /* transição quando passa o mouse no Opera */
+-ms-transition: background-color .3s ease-out; /* transição quando passa o mouse Explorer */
+transition: background-color .3s ease-out; /* transição quando passa o mouse 'deelay'*/
+}
+
+.menu-topo li a:hover {  /*Efeito hover, quando passar o mouse por cima de determinado item, irá fazer um efeito declarado*/
+background-color: #da0909 !important;
+-moz-box-shadow: inset 0 0 10px #da0909 !important;
+-webkit-box-shadow: inset 0 0 10px #da0909 !important;
+box-shadow: inset 0 0 10px #da0909 !important; /*quando passar o mouse por cima de determinado item*/
+}
+
+/* Main - Conteudo */
+
+.main {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 15px 0;
+}
+
+.box-grid {
+    width: 100%;
+    height: auto;
+    float: left; /* centralizar a esquerda e sempre ficar abaixo do de cima*/
+    margin: 15px 0;
+}
+
+.box-grid .box {
+    background: #fff;
+    width: 48.7%;
+}
+
+.esquerda {
+    float: left;
+}
+
+.direita {
+    float: right;
+}
+
+.box img {
+    padding: 20px;
+}
+
+.box h3, main-center h1 {
+font-size: 28px;
+padding: 5px 20px;
+margin: 0;
+}
+
+.box p, .main-center p {
+    font-size: 17px;
+    padding: 5px 20px;
+    margin: 0;
+    font-weight: 300;
+    color: #5d5d5d;
+    line-height: 25px;
+}
+
+.leia-mais {
+    padding: 25px 20px;
+    float: left;
+}
+
+.leia-mais a{
+    padding: 10px 25px;
+    background: #5a7a98;
+    border-bottom: 1px solid #e6e6e6;
+    border-radius: 4px;
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    -webkit-transition: background-color .3s ease-out; /* transição quando passa o mouse no Chrome */
+    -moz-transition: background-color .3s ease-out;/* transição quando passa o mouse no Firefox */
+    -o-transition: background-color .3s ease-out; /* transição quando passa o mouse no Opera */
+    -ms-transition: background-color .3s ease-out; /* transição quando passa o mouse Explorer */
+    transition: background-color .3s ease-out; /* transição quando passa o mouse 'deelay'*/
+}
+
+.leia-mais a:hover {
+    background: #415b71 !important;
+}
+
+/* Footer - rodapé */
+
+.footer {
+    width: 100%;
+    height: 251px;
+    float: left;
+    background: black;
+    color: white;
+}
+
+.copy {
+    width: 100%;
+    float: left;
+    background: #54748e;
+    
+}
+
+.box-footer {
+    width: 33.33333%; /* 100% dividivo por 3, para todas as box footer ter o mesmo tamanho */
+    float: left;
+    height: auto;
+}
+
+.box-footer ul li a,p { /* Estilização para a footer apenas uma vez, pois as mesma se repetem*/
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.box-footer li a:hover {
+    color: #6684a0
+}
+
+.box-footer h4 {
+    font-size: 28px;
+    padding: 20px 0;
+    text-decoration: underline;
+    margin: 0;
+    color: #fff
+}
+
+.redes-sociais ul li {
+    float: left;
+    list-style: none;
+}
+
+.redes-sociais ul li a{
+    padding: 5px;
+    font-size: 35px !important;
+}
+
+.newsletter {
+    margin: 10px 0;
+    width: 100%;
+    float: left;
+}
+
+.newsletter .input {
+    padding: 10px 15px;
+    border: 1px solid #e6e6e6;
+    background-color: #f5f5f5;
+    width: 230px;
+    color: #444;
+}
+
+.newsletter button {
+    border: none !important;
+}
+
+.newsletter .button {
+    float: left;
+    padding: 10px 25px;
+    background: #5a7a98;
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 5px;
+    -webkit-transition: background-color .3s ease-out; /* transição quando passa o mouse no Chrome */
+    -moz-transition: background-color .3s ease-out;/* transição quando passa o mouse no Firefox */
+    -o-transition: background-color .3s ease-out; /* transição quando passa o mouse no Opera */
+    -ms-transition: background-color .3s ease-out; /* transição quando passa o mouse Explorer */
+    transition: background-color .3s ease-out; /* transição quando passa o mouse 'deelay'*/
+}
+
+.newsletter .button:hover {
+    background-color: chartreuse;
+    color: black;
+}
+
+
+.copy {
+    width: 100%;
+    float: left;
+    background: #54748e;
+    color: whitesmoke;
+}
